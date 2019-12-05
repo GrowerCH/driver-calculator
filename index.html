@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>driver-calculator</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" crossorigin="anonymous">
+
+    <h3 class="m-3 text-center">Tool zum Berechnen von MeanWell Konstantstromquellen</h3>
+
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+            <fieldset class="card mb-3" disabled>
+                <div class="card-header">Modul Daten eingeben</div>
+
+                <div class="card-body">
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Gewünschte Stromstärke</div>
+                        </div>
+                        <select id="SELECT_CURRENT" class="form-control"></select>
+                        <div class="input-group-append">
+                            <div class="input-group-text">A</div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Modul Spannung</div>
+                        </div>
+                        <input class="form-control" id="INPUT_VOLTAGE" type="number" min="1">
+                        <div class="input-group-append">
+                            <div class="input-group-text">V</div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Anzahl Module</div>
+                        </div>
+                        <input class="form-control" id="INPUT_AMOUNT" type="number" min="1" value="1">
+                    </div>
+
+                </div>
+            </fieldset>
+
+        </div>
+        <div class="row justify-content-center">
+
+            <fieldset class="card">
+                <div class="card-header">Geeignete Treiber</div>
+
+                <div class="card-body">
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Spannung insgesamt</div>
+                        </div>
+                        <input class="form-control bg-dark text-light" id="OUTPUT_VOLTAGE" type="number" readonly>
+                        <div class="input-group-append">
+                            <div class="input-group-text">V</div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Watt insgesamt</div>
+                        </div>
+                        <input class="form-control bg-dark text-light" id="OUTPUT_WATTAGE" type="number" readonly>
+                        <div class="input-group-append">
+                            <div class="input-group-text">W</div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="table-responsive">
+                        <table class="table" id="TABLE_RESULT"></table>
+                    </div>
+
+                </div>
+            </fieldset>
+
+        </div>
+    </div>
+
+</head>
+
+<body>
+
+<script src="js/data-handler.js" type="text/javascript"></script>
+<script src="js/driver-calculator.js" type="text/javascript"></script>
+<script src="js/table-handler.js" type="text/javascript"></script>
+
+<script>
+
+    let DRIVER_LIST = [];
+
+    let SELECT_CURRENT = document.getElementById("SELECT_CURRENT");
+    SELECT_CURRENT.addEventListener("change", () => {
+        calculateVoltage();
+        generateResult();
+    });
+
+    let INPUT_VOLTAGE = document.getElementById("INPUT_VOLTAGE");
+    INPUT_VOLTAGE.addEventListener("input", () => {
+        calculateVoltage();
+        generateResult();
+    });
+
+    let INPUT_AMOUNT = document.getElementById("INPUT_AMOUNT");
+    INPUT_AMOUNT.addEventListener("input", () => {
+        calculateVoltage();
+        generateResult();
+    });
+
+    let OUTPUT_VOLTAGE = document.getElementById("OUTPUT_VOLTAGE");
+    let OUTPUT_WATTAGE = document.getElementById("OUTPUT_WATTAGE");
+
+    let TABLE_RESULT = document.getElementById("TABLE_RESULT");
+
+
+    function setSelectOptions(select, values) {
+        values.sort();
+        for (let value of values) {
+            let option = document.createElement("OPTION");
+            option.text = value;
+            select.add(option);
+        }
+    }
+
+    function enableFieldsets() {
+        for (let fieldset of document.getElementsByTagName("FIELDSET")) {
+            fieldset.removeAttribute("disabled");
+        }
+    }
+
+    function calculateVoltage() {
+        OUTPUT_VOLTAGE.value = Math.round(INPUT_VOLTAGE.value * INPUT_AMOUNT.value);
+        OUTPUT_WATTAGE.value = Math.round(OUTPUT_VOLTAGE.value * SELECT_CURRENT.value);
+    }
+
+    function generateResult() {
+        updateTable(TABLE_RESULT, DRIVER_LIST, SELECT_CURRENT.value, OUTPUT_VOLTAGE.value);
+    }
+
+    function setURLParameters() {
+        let url = new URL(window.location.href);
+        let amount = url.searchParams.get("a");
+        let current = url.searchParams.get("c");
+        let voltage = url.searchParams.get("v");
+
+        if (amount != null && current != null && voltage != null) {
+            INPUT_AMOUNT.value = amount;
+            SELECT_CURRENT.value = current;
+            INPUT_VOLTAGE.value = voltage;
+            calculateVoltage();
+        }
+    }
+
+    jsonFileToObjectArray("json/drivers.json")
+        .then(drivers => {
+
+            DRIVER_LIST = drivers;
+
+            let currents = extractCurrents(DRIVER_LIST);
+            setSelectOptions(SELECT_CURRENT, currents);
+
+            enableFieldsets();
+
+            setURLParameters();
+
+            createTable(TABLE_RESULT);
+            generateResult();
+        });
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+<footer class="footer">
+    <div class="text-center py-3">
+        Made for
+        <a href="https://grower.ch/"> Grower.CH </a>
+        by POTent
+    </div>
+</footer>
+
+</html>
