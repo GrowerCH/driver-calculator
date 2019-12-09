@@ -340,7 +340,7 @@
     ]
   },
   {
-    "model": "HVGC-65",
+    "model": "HVGC-65-",
     "performances": [
       {
         "current": 0.35,
@@ -365,7 +365,7 @@
     ]
   },
   {
-    "model": "HVGC-100",
+    "model": "HVGC-100-",
     "performances": [
       {
         "current": 0.35,
@@ -380,7 +380,7 @@
     ]
   },
   {
-    "model": "HVGC-150",
+    "model": "HVGC-150-",
     "performances": [
       {
         "current": 0.35,
@@ -410,7 +410,7 @@
     ]
   },
   {
-    "model": "HVGC-240",
+    "model": "HVGC-240-",
     "performances": [
       {
         "current": 0.7,
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "model": "HVGC-320",
+    "model": "HVGC-320-",
     "performances": [
       {
         "current": 0.7,
