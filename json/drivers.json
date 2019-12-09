@@ -4,28 +4,28 @@
     "performances": [
       {
         "current": 0.35,
-        "min_voltage": 107,
-        "max_voltage": 214
+        "min_voltage": 107.0,
+        "max_voltage": 214.0
       },
       {
         "current": 0.5,
-        "min_voltage": 75,
-        "max_voltage": 150
+        "min_voltage": 75.0,
+        "max_voltage": 150.0
       },
       {
         "current": 0.7,
-        "min_voltage": 53,
-        "max_voltage": 107
+        "min_voltage": 53.0,
+        "max_voltage": 107.0
       },
       {
         "current": 1.05,
-        "min_voltage": 35,
-        "max_voltage": 71
+        "min_voltage": 35.0,
+        "max_voltage": 71.0
       },
       {
         "current": 1.4,
-        "min_voltage": 27,
-        "max_voltage": 54
+        "min_voltage": 27.0,
+        "max_voltage": 54.0
       }
     ]
   },
@@ -34,28 +34,28 @@
     "performances": [
       {
         "current": 0.35,
-        "min_voltage": 143,
-        "max_voltage": 286
+        "min_voltage": 143.0,
+        "max_voltage": 286.0
       },
       {
         "current": 0.5,
-        "min_voltage": 100,
-        "max_voltage": 200
+        "min_voltage": 100.0,
+        "max_voltage": 200.0
       },
       {
         "current": 0.7,
-        "min_voltage": 71,
-        "max_voltage": 143
+        "min_voltage": 71.0,
+        "max_voltage": 143.0
       },
       {
         "current": 1.05,
-        "min_voltage": 48,
-        "max_voltage": 95
+        "min_voltage": 48.0,
+        "max_voltage": 95.0
       },
       {
         "current": 1.4,
-        "min_voltage": 35,
-        "max_voltage": 72
+        "min_voltage": 35.0,
+        "max_voltage": 72.0
       }
     ]
   },
@@ -64,33 +64,33 @@
     "performances": [
       {
         "current": 0.5,
-        "min_voltage": 150,
-        "max_voltage": 300
+        "min_voltage": 150.0,
+        "max_voltage": 300.0
       },
       {
         "current": 0.7,
-        "min_voltage": 107,
-        "max_voltage": 214
+        "min_voltage": 107.0,
+        "max_voltage": 214.0
       },
       {
         "current": 1.05,
-        "min_voltage": 72,
-        "max_voltage": 143
+        "min_voltage": 72.0,
+        "max_voltage": 143.0
       },
       {
         "current": 1.4,
-        "min_voltage": 54,
-        "max_voltage": 107
+        "min_voltage": 54.0,
+        "max_voltage": 107.0
       },
       {
         "current": 1.75,
-        "min_voltage": 43,
-        "max_voltage": 86
+        "min_voltage": 43.0,
+        "max_voltage": 86.0
       },
       {
         "current": 2.1,
-        "min_voltage": 36,
-        "max_voltage": 72
+        "min_voltage": 36.0,
+        "max_voltage": 72.0
       }
     ]
   },
@@ -99,28 +99,28 @@
     "performances": [
       {
         "current": 0.7,
-        "min_voltage": 142,
-        "max_voltage": 286
+        "min_voltage": 142.0,
+        "max_voltage": 286.0
       },
       {
         "current": 1.05,
-        "min_voltage": 95,
-        "max_voltage": 190
+        "min_voltage": 95.0,
+        "max_voltage": 190.0
       },
       {
         "current": 1.4,
-        "min_voltage": 71,
-        "max_voltage": 142
+        "min_voltage": 71.0,
+        "max_voltage": 142.0
       },
       {
         "current": 1.75,
-        "min_voltage": 57,
-        "max_voltage": 114
+        "min_voltage": 57.0,
+        "max_voltage": 114.0
       },
       {
         "current": 2.1,
-        "min_voltage": 48,
-        "max_voltage": 96
+        "min_voltage": 48.0,
+        "max_voltage": 96.0
       }
     ]
   },
@@ -129,28 +129,28 @@
     "performances": [
       {
         "current": 0.7,
-        "min_voltage": 172,
-        "max_voltage": 343
+        "min_voltage": 172.0,
+        "max_voltage": 343.0
       },
       {
         "current": 1.05,
-        "min_voltage": 114,
-        "max_voltage": 228
+        "min_voltage": 114.0,
+        "max_voltage": 228.0
       },
       {
         "current": 1.4,
-        "min_voltage": 86,
-        "max_voltage": 171
+        "min_voltage": 86.0,
+        "max_voltage": 171.0
       },
       {
         "current": 1.75,
-        "min_voltage": 69,
-        "max_voltage": 137
+        "min_voltage": 69.0,
+        "max_voltage": 137.0
       },
       {
         "current": 2.1,
-        "min_voltage": 57,
-        "max_voltage": 115
+        "min_voltage": 57.0,
+        "max_voltage": 115.0
       }
     ]
   },
@@ -159,13 +159,13 @@
     "performances": [
       {
         "current": 0.35,
-        "min_voltage": 100,
-        "max_voltage": 200
+        "min_voltage": 100.0,
+        "max_voltage": 200.0
       },
       {
         "current": 0.7,
-        "min_voltage": 50,
-        "max_voltage": 100
+        "min_voltage": 50.0,
+        "max_voltage": 100.0
       }
     ]
   },
@@ -174,13 +174,13 @@
     "performances": [
       {
         "current": 0.35,
-        "min_voltage": 167,
-        "max_voltage": 257
+        "min_voltage": 167.0,
+        "max_voltage": 257.0
       },
       {
         "current": 0.7,
-        "min_voltage": 84,
-        "max_voltage": 129
+        "min_voltage": 84.0,
+        "max_voltage": 129.0
       }
     ]
   },
@@ -189,28 +189,28 @@
     "performances": [
       {
         "current": 0.35,
-        "min_voltage": 215,
-        "max_voltage": 430
+        "min_voltage": 215.0,
+        "max_voltage": 430.0
       },
       {
         "current": 0.5,
-        "min_voltage": 150,
-        "max_voltage": 300
+        "min_voltage": 150.0,
+        "max_voltage": 300.0
       },
       {
         "current": 0.7,
-        "min_voltage": 107,
-        "max_voltage": 215
+        "min_voltage": 107.0,
+        "max_voltage": 215.0
       },
       {
         "current": 1.05,
-        "min_voltage": 74,
-        "max_voltage": 148
+        "min_voltage": 74.0,
+        "max_voltage": 148.0
       },
       {
         "current": 1.4,
-        "min_voltage": 54,
-        "max_voltage": 108
+        "min_voltage": 54.0,
+        "max_voltage": 108.0
       }
     ]
   },
@@ -219,23 +219,23 @@
     "performances": [
       {
         "current": 0.5,
-        "min_voltage": 200,
-        "max_voltage": 400
+        "min_voltage": 200.0,
+        "max_voltage": 400.0
       },
       {
         "current": 0.7,
-        "min_voltage": 143,
-        "max_voltage": 286
+        "min_voltage": 143.0,
+        "max_voltage": 286.0
       },
       {
         "current": 1.05,
-        "min_voltage": 95,
-        "max_voltage": 190
+        "min_voltage": 95.0,
+        "max_voltage": 190.0
       },
       {
         "current": 1.4,
-        "min_voltage": 71,
-        "max_voltage": 143
+        "min_voltage": 71.0,
+        "max_voltage": 143.0
       }
     ]
   },
@@ -244,28 +244,28 @@
     "performances": [
       {
         "current": 0.7,
-        "min_voltage": 178,
-        "max_voltage": 357
+        "min_voltage": 178.0,
+        "max_voltage": 357.0
       },
       {
         "current": 1.05,
-        "min_voltage": 119,
-        "max_voltage": 238
+        "min_voltage": 119.0,
+        "max_voltage": 238.0
       },
       {
         "current": 1.4,
-        "min_voltage": 89,
-        "max_voltage": 179
+        "min_voltage": 89.0,
+        "max_voltage": 179.0
       },
       {
         "current": 1.75,
-        "min_voltage": 71,
-        "max_voltage": 143
+        "min_voltage": 71.0,
+        "max_voltage": 143.0
       },
       {
         "current": 2.1,
-        "min_voltage": 59,
-        "max_voltage": 119
+        "min_voltage": 59.0,
+        "max_voltage": 119.0
       }
     ]
   },
@@ -274,38 +274,38 @@
     "performances": [
       {
         "current": 0.7,
-        "min_voltage": 214,
-        "max_voltage": 428
+        "min_voltage": 214.0,
+        "max_voltage": 428.0
       },
       {
         "current": 1.05,
-        "min_voltage": 152,
-        "max_voltage": 305
+        "min_voltage": 152.0,
+        "max_voltage": 305.0
       },
       {
         "current": 1.4,
-        "min_voltage": 114,
-        "max_voltage": 229
+        "min_voltage": 114.0,
+        "max_voltage": 229.0
       },
       {
         "current": 1.75,
-        "min_voltage": 91,
-        "max_voltage": 183
+        "min_voltage": 91.0,
+        "max_voltage": 183.0
       },
       {
         "current": 2.1,
-        "min_voltage": 76,
-        "max_voltage": 152
+        "min_voltage": 76.0,
+        "max_voltage": 152.0
       },
       {
         "current": 2.8,
-        "min_voltage": 57,
-        "max_voltage": 114
+        "min_voltage": 57.0,
+        "max_voltage": 114.0
       },
       {
         "current": 3.5,
-        "min_voltage": 46,
-        "max_voltage": 91
+        "min_voltage": 46.0,
+        "max_voltage": 91.0
       }
     ]
   },
@@ -314,28 +314,178 @@
     "performances": [
       {
         "current": 1.4,
-        "min_voltage": 171,
-        "max_voltage": 341
+        "min_voltage": 171.0,
+        "max_voltage": 341.0
       },
       {
         "current": 1.75,
-        "min_voltage": 137,
-        "max_voltage": 274
+        "min_voltage": 137.0,
+        "max_voltage": 274.0
       },
       {
         "current": 2.1,
-        "min_voltage": 114,
-        "max_voltage": 229
+        "min_voltage": 114.0,
+        "max_voltage": 229.0
       },
       {
         "current": 2.8,
-        "min_voltage": 85,
-        "max_voltage": 171
+        "min_voltage": 85.0,
+        "max_voltage": 171.0
       },
       {
         "current": 3.5,
-        "min_voltage": 68,
-        "max_voltage": 137
+        "min_voltage": 68.0,
+        "max_voltage": 137.0
+      }
+    ]
+  },
+  {
+    "model": "HVGC-65",
+    "performances": [
+      {
+        "current": 0.35,
+        "min_voltage": 18.0,
+        "max_voltage": 186.0
+      },
+      {
+        "current": 0.5,
+        "min_voltage": 13.0,
+        "max_voltage": 130.0
+      },
+      {
+        "current": 0.7,
+        "min_voltage": 9.0,
+        "max_voltage": 93.0
+      },
+      {
+        "current": 1.05,
+        "min_voltage": 6.0,
+        "max_voltage": 62.0
+      }
+    ]
+  },
+  {
+    "model": "HVGC-100",
+    "performances": [
+      {
+        "current": 0.35,
+        "min_voltage": 29.0,
+        "max_voltage": 285.0
+      },
+      {
+        "current": 0.7,
+        "min_voltage": 15.0,
+        "max_voltage": 142.0
+      }
+    ]
+  },
+  {
+    "model": "HVGC-150",
+    "performances": [
+      {
+        "current": 0.35,
+        "min_voltage": 42.0,
+        "max_voltage": 428.0
+      },
+      {
+        "current": 0.5,
+        "min_voltage": 30.0,
+        "max_voltage": 300.0
+      },
+      {
+        "current": 0.7,
+        "min_voltage": 30.0,
+        "max_voltage": 300.0
+      },
+      {
+        "current": 1.05,
+        "min_voltage": 15.0,
+        "max_voltage": 143.0
+      },
+      {
+        "current": 1.4,
+        "min_voltage": 12.0,
+        "max_voltage": 107.0
+      }
+    ]
+  },
+  {
+    "model": "HVGC-240",
+    "performances": [
+      {
+        "current": 0.7,
+        "min_voltage": 171.4,
+        "max_voltage": 342.8
+      },
+      {
+        "current": 1.05,
+        "min_voltage": 114.3,
+        "max_voltage": 228.6
+      },
+      {
+        "current": 1.4,
+        "min_voltage": 85.7,
+        "max_voltage": 171.4
+      },
+      {
+        "current": 1.75,
+        "min_voltage": 68.5,
+        "max_voltage": 137.1
+      },
+      {
+        "current": 2.1,
+        "min_voltage": 57.1,
+        "max_voltage": 114.3
+      },
+      {
+        "current": 2.8,
+        "min_voltage": 42.9,
+        "max_voltage": 85.7
+      },
+      {
+        "current": 3.5,
+        "min_voltage": 34.3,
+        "max_voltage": 68.6
+      }
+    ]
+  },
+  {
+    "model": "HVGC-320",
+    "performances": [
+      {
+        "current": 0.7,
+        "min_voltage": 214.0,
+        "max_voltage": 428.0
+      },
+      {
+        "current": 1.05,
+        "min_voltage": 152.4,
+        "max_voltage": 304.8
+      },
+      {
+        "current": 1.4,
+        "min_voltage": 114.3,
+        "max_voltage": 228.6
+      },
+      {
+        "current": 1.75,
+        "min_voltage": 91.4,
+        "max_voltage": 182.8
+      },
+      {
+        "current": 2.1,
+        "min_voltage": 76.2,
+        "max_voltage": 152.4
+      },
+      {
+        "current": 2.8,
+        "min_voltage": 57.0,
+        "max_voltage": 114.3
+      },
+      {
+        "current": 3.5,
+        "min_voltage": 45.7,
+        "max_voltage": 91.4
       }
     ]
   }
